@@ -1,0 +1,41 @@
+1649571139797	Delete element
+1649578540135	Delete element
+1649589276230	Encapsulate field 'size'
+1649589444805	Encapsulate field 'model'
+1649654305700	Delete element
+1649655140912	Delete element
+1649669884576	Rename package 'bootcamp.oop.basic.ComplexNum_Runner'
+1649681087062	Rename type 'pizzaDelivery'
+1649712873680	Delete element
+1649712881783	Rename type 'Runner_Example'
+1649712958750	Rename package 'bootcamp.oop.basic.learn_strings'
+1649713123230	Change method 'getUserInputByMsg'
+1649741814649	Delete element
+1649751820563	Delete element
+1649753169975	Delete element
+1649753239257	Delete element
+1649775732803	Rename method 'buying'
+1649791133356	Copy package
+1649791163238	Delete element
+1649791168507	Delete element
+1649826067253	Delete element
+1649836478707	Delete element
+1649836499362	Rename package 'bootcamp.oop.project.Drinks_Machine'
+1649836509836	Rename package 'bootcamp.oop.project.Drinks_Machine_interfaces'
+1649838903800	Rename type 'TheSoftDrinks'
+1649838946939	Rename type 'TheSodaDrinks'
+1649842499788	Rename type 'PurchasedType'
+1649842521756	Rename field 'purchasedDrink'
+1649842540365	Rename type 'SoftType'
+1649842553678	Rename field 'softDrinkType'
+1649859074553	Rename field 'shotLateType'
+1649892568822	Rename package 'bootcamp.oop.project.DrinksMachine'
+1649892604687	Rename package 'bootcamp.oop.project.DrinksMachine_classes'
+1649892623785	Rename package 'bootcamp.oop.project.DrinksMachine_interfaces'
+1649892686349	Rename package 'bootcamp.oop.drinkdProject.DrinksMachine'
+1649892701094	Rename package 'bootcamp.oop.drinkdProject.DrinksMachine_classes'
+1649892728493	Rename package 'bootcamp.oop.drinkdProject.DrinksMachine_interfaces'
+1649919891456	Encapsulate field 'deparatureTime'
+1649919968627	Encapsulate field 'flightNumber'
+1649919973042	Encapsulate field 'duration'
+1649919989402	Encapsulate field 'date'

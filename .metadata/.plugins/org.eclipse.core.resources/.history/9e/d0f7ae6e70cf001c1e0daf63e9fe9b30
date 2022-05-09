@@ -1,0 +1,57 @@
+package lambdaExpressions.personEx;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Runner {
+
+	public static void main(String[] args) 
+	{
+		
+		List<Person> people = Arrays.asList(
+				new Person("John", "Travolta", 22),
+				new Person("Sean", "Michaels", 13),
+				new Person("Don", "Juan", 17),
+				new Person("Shiri", "Maymon", 38),
+				new Person("Thomas", "Edisson", 120),
+				new Person("Liroy", "Fame", 71));
+		
+		people.forEach(p->System.out.println(p));
+		System.out.println("-----------------------------------------");
+		
+		Collections.sort(people, (p1, p2)->p1.lName.compareTo(p2.lName));
+		people.forEach(p->System.out.println(p));	
+		System.out.println("-----------------------------------------");
+		people.forEach(p->{
+			if(!p.fName.contains("o")) {
+				System.out.println(p);
+			}
+			
+		});
+		System.out.println("-----------------------------------------");
+		List<Person> under21 = people.stream().filter(p->p.age<=21).collect(Collectors.toList());
+		
+		under21.stream().forEach(System.out::println);
+
+	}
+	
+	private List<Person> createPeopleList()
+	{
+		List<Person> people = new ArrayList<Person>();		
+		Person person_1 = new Person("Faraj", "Khanjar", 28);
+		Person person_2 = new Person("Ofer", "Inbar", 15);
+		Person person_3	= new Person("Afek", "Habusha", 17);
+		Person person_4	= new Person("Soso", "Memo", 40);
+		Person person_5	= new Person("John", "Snow", 90);
+		
+		people.add(person_1);
+		people.add(person_2);
+		people.add(person_3);
+		people.add(person_4);
+		people.add(person_5);
+		
+		return people;
+	}
+
+}

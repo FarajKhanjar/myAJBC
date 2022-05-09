@@ -1,0 +1,6 @@
+package generics.example;
+
+public interface GenericInterface<T> 
+{
+
+}

@@ -1,0 +1,21 @@
+package generics.example;
+
+public class GenericClass<T> 
+{
+	private T data;
+	
+	public GenericClass(T data)
+	{
+		setData(data); 
+	}
+	public T getData()
+	{
+		return this.data;
+	}
+	
+	public void setData(T data)
+	{
+		this.data=data;
+	}	
+
+}

@@ -1,0 +1,57 @@
+package lambdaExpressions.personEx;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Runner 
+{
+
+	public static void main(String[] args) 
+	{
+		List<Person> people = createPeopleList();	
+		System.out.println("People List: ");
+		people.forEach(onePerson->System.out.println(onePerson));
+		
+		System.out.println("\nList Sorted by last name: ");
+		Collections.sort(people, (onePerson, secondPerson)->onePerson.lastName.compareTo(secondPerson.lastName));
+		people.forEach(onePerson->System.out.println(onePerson));	
+        
+		System.out.println("\nList of people who doesnt have the letter o in their first name: ");
+		final CharSequence LETTER_O = "o";
+		people.forEach(onePerson->
+		{
+			if(!onePerson.firstName.contentEquals(LETTER_O)) 
+			{
+				System.out.println(onePerson);
+			}
+			
+		});
+		System.out.println("\nList of people under the age of 21: ");
+		List<Person> personUnderAge = people.stream()
+				.filter(onePerson->onePerson.age<=21)
+				.collect(Collectors.toList());		
+		personUnderAge.stream().forEach(System.out::println);
+
+	}
+	
+	private static List<Person> createPeopleList()
+	{
+		List<Person> people = new ArrayList<Person>();		
+		Person person_1 = new Person("Faraj", "Khanjar", 28.5f);
+		Person person_2 = new Person("Saul", "Godman", 35);
+		Person person_3	= new Person("Afek", "Habusha", 17);
+		Person person_4	= new Person("Soso", "Memo", 9.10f);
+		Person person_5	= new Person("John", "Snow", 90.2f);
+		
+		people.add(person_1);
+		people.add(person_2);
+		people.add(person_3);
+		people.add(person_4);
+		people.add(person_5);
+		
+		return people;
+	}
+
+}

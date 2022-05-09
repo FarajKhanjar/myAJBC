@@ -1,0 +1,96 @@
+package bootcamp.basic.methods;
+
+import java.util.Scanner;
+
+public class Ex_6 {
+
+	public static int getPlusOneNumber(int number) //This method returned a new number +1 for each digit.
+	
+	{		
+		int moduloDigit,newDigit,multiply=1,result=0;
+		 while(number !=0) {
+			 moduloDigit = number%10;
+			 newDigit = moduloDigit + 1;
+			 if(newDigit==10) {
+				 newDigit=0;
+			 }
+			 result+=(newDigit*multiply);
+			 multiply*=10;
+			 number/=10;
+		 }
+			return result;
+			
+	}
+	
+	public static int checkDigitsOfTwoNumbers(int number1,int number2) //This method returned a new number +1 for each digit.
+	
+	{	
+		int defaultNumber=-1;
+		int saveNum1=number1,saveNum2=number2;
+		int cnt1=0,cnt2=0;
+		int moduloDigit,moduloDigit2,newDigit,multiply=1,result=0;
+		
+		 while(number1 !=0) {
+			 moduloDigit = number1%10;
+			 cnt1++;
+			 number1/=10;
+		 }
+		 while(number2 !=0) {
+			 moduloDigit = number2%10;
+			 cnt1++;
+			 number2/=10;
+		 }
+		 if(cnt1!=cnt2)
+		 {
+			 return defaultNumber;
+		 }
+		 else {
+			// while(number1 !=0) {
+				 moduloDigit = saveNum1%10;
+				 while(saveNum2 !=0) {
+					 moduloDigit2 = saveNum2%10;
+					 if(moduloDigit<=moduloDigit2) {
+						 newDigit=moduloDigit;
+					 }
+					 else {
+						 newDigit=moduloDigit2;
+					 }
+					 result+=(newDigit*multiply);
+					 multiply*=10;
+					 saveNum2/=10;
+					 saveNum1/=10;
+				 }
+ 
+			// }
+		 }
+		 return result;
+				
+	}
+	public static void main(String[] args) {
+	
+		
+	/*	//Question 1: 
+		//Write a method that returned a new number, that make +1 for each digit.
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter your number:");
+		int number = scanner.nextInt();
+		int newNumber=getPlusOneNumber(number);
+		System.out.println("The new number is: "+newNumber);
+	*/
+		
+		
+		//Question 2: 
+		//
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the first number:");
+		int number1 = scanner.nextInt();
+		System.out.println("Enter the second number:");
+		int number2 = scanner.nextInt();
+		int newNumber=checkDigitsOfTwoNumbers(number1,number2);
+		System.out.println(newNumber);
+	
+		scanner.close();
+
+	}
+
+}

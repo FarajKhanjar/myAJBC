@@ -1,0 +1,19 @@
+package generics.example;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Runner 
+{	
+	public static void main(String[] args) 
+	{	
+		GenericClass<Integer> generic = new GenericClass<>();
+		List<Integer> data = Arrays.asList(100, 2000, 250, 4, 500);
+		List<Integer> reverseList = generic.reverseList(data);
+
+		
+		System.out.println(reverseList);
+
+	}
+
+}

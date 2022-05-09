@@ -1,0 +1,8 @@
+package lambdaExpressions.personEx;
+
+@FunctionalInterface
+public interface Printable 
+{
+	void print(String s);
+
+}

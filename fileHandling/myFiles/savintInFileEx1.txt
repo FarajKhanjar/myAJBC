@@ -1,0 +1,5 @@
+Number of Words is : 32508.
+Number of lines is : 3600.
+Text Of line 18:
+on the bank, and of having nothing to do:  once or twice she had
+Word Of index 578: not

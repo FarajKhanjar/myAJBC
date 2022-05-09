@@ -1,0 +1,40 @@
+package lambdaExpressions.example;
+
+public class Printer implements Printable
+{
+	public static void main(String[] args)
+	{
+		Printer printer = new Printer();
+		String hello = "Hello";
+		//printer.print(hello);
+		
+/*		Printable printable = new Printable();
+		{
+			@Override
+			public void print(String s)
+			{
+				System.out.println(s);
+			}
+		};
+*/		
+		Printable printable = (s)->System.out.println(s+" is printed");
+		activate(printable,hello);
+		
+		
+		Addable addable = (x,y)->x+y;
+		activate(addable);
+		
+	}
+	
+	public static void activate(Printable printable,String s) 
+	{
+		printable.print(s);
+	}
+	
+	public static void activate(Addable addable) 
+	{
+		System.out.println(addable.add(4, 5));
+	}
+
+
+}

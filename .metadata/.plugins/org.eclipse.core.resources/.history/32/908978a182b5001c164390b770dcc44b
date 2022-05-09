@@ -1,0 +1,227 @@
+package bootcamp.basic.methods;
+
+import java.util.Scanner;
+
+public class Ex_6 {
+
+	public static int getPlusOneNumber(int number) //This method returned a new number +1 for each digit.	
+	{		
+		int moduloDigit,newDigit,multiply=1,result=0;
+		 while(number !=0) {
+			 moduloDigit = number%10;
+			 newDigit = moduloDigit + 1;
+			 if(newDigit==10) {
+				 newDigit=0;
+			 }
+			 result+=(newDigit*multiply);
+			 multiply*=10;
+			 number/=10;
+		 }
+			return result;			
+	}
+	
+	public static int checkDigitsOfTwoNumbers(int number1,int number2) //This method check if the number of the digits of two numbers are the same and returned a new number.
+	{	
+		final int defaultNumber=-1; //basicValue
+		int saveNum1=number1,saveNum2=number2; //saving the source numbers.
+		int cnt1=0,cnt2=0; //count the number of digits in each number.
+		int moduloDigit,moduloDigit2,newDigit,multiply=1;//Auxiliary variables for calculation.
+		int result=0;	//the final new number.
+		 while(number1 !=0) {
+			 moduloDigit = number1%10;
+			 cnt1++;
+			 number1/=10;
+		 }
+		 while(number2 !=0) {
+			 moduloDigit = number2%10;
+			 cnt2++;
+			 number2/=10;
+		 }
+		 if(cnt1!=cnt2)
+		 {
+			 return defaultNumber;
+		 }
+		 else {		 
+			 while(saveNum2 !=0) {
+				 moduloDigit = saveNum1%10;
+				 moduloDigit2 = saveNum2%10;
+				 if(moduloDigit<=moduloDigit2) {
+					 newDigit=moduloDigit;
+				 }
+				 else {
+					 newDigit=moduloDigit2;
+				 }
+				 result+=(newDigit*multiply);
+				 multiply*=10;
+				 saveNum2/=10;
+				 saveNum1/=10;
+			 }
+		 }
+		 return result;
+				
+	}
+	
+	public static boolean checkMeshukhlalNumber(int number) //This method check if the number is a 'Meshukhlal-Number' or not.
+	{	
+	
+		int sum=0; //sum of all digits with modulo  0 - int the number
+		for(int i=2; i<number; i++)
+		{
+			if(number%i==0) {
+				sum+=i;
+			}		
+		}
+		sum+=1;
+		if(sum==number)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}				
+	}
+	
+	public static int getSumOfNumberDigits(int number) //This method returned the sum of the digits of the number.
+	{	
+		int sum=0;
+		int moduloDigit; //Auxiliary variable.
+		 while(number !=0) {
+			 moduloDigit = number%10;
+			 sum+=moduloDigit; //the sum so far.
+			 number/=10;
+		 }
+			return sum;			
+	}
+	
+	public static int checkSumOfArrayElements(int[] array,int number) //This method returned the count of the elements in the array that there sum of the digits are 10.
+	{	
+		int elementSum; //Auxiliary variable.
+		int cnt=0; //counter
+		for(int i=0; i<number; i++)
+		{
+			elementSum = getSumOfNumberDigits(array[i]);
+			if(elementSum == 10) {
+				cnt++; 
+			}
+		}
+		return cnt;
+	}
+
+	public static void printRhombusByChar(int number, String sign) //This method print a print Rhombus By input sign char.
+	{
+		int saveNumber1 = number,saveNumber2 = number;
+		final String defaultSign="_"; //basicValue 
+		for(int i=0; i<number; i++)
+		{
+			System.out.print(sign);
+			for(int j=0; j<saveNumber1; j++)
+			{
+			  if(j==(saveNumber1-1))
+			  {
+				  String s = (String) defaultSign*i;
+				  System.out.print((String)defaultSign*i);
+				 
+			  }
+			  else {
+				  System.out.print(sign);
+			  }
+			}
+			saveNumber1-=1;
+			for(int j=0; j<saveNumber2; j++)
+			{
+			  if(i==(saveNumber2-1))
+			  {
+				  System.out.print(defaultSign);
+				
+			  }
+			  else {
+				  System.out.print(sign);
+			  }
+			}
+			saveNumber2-=1;
+			System.out.println();
+		}
+	}
+	public static void main(String[] args) {
+	
+		
+	/*	//Question 1: 
+		//Write a method that returned a new number, that make +1 for each digit.
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter your number:");
+		int number = scanner.nextInt();
+		int newNumber=getPlusOneNumber(number);
+		System.out.println("The new number is: "+newNumber);
+		scanner.close();
+	*/
+		
+		
+	/*	//Question 2: 
+		//Write a method that check if the number of the digits of two numbers are the same,
+		//and returned a new number that each digit is the smeller between the two digits.
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the first number:");
+		int number1 = scanner.nextInt();
+		System.out.println("Enter the second number:");
+		int number2 = scanner.nextInt();
+		int newNumber=checkDigitsOfTwoNumbers(number1,number2);
+		System.out.println(newNumber);
+		scanner.close();
+	*/
+		
+		
+	/*	//Question 3: 
+		//Write a method that check if the number is a 'Meshukhlal-Number' or not.		
+		Scanner scanner = new Scanner(System.in);
+		//System.out.println("Enter your number:");
+		//int number = scanner.nextInt();	
+		for(int i=1; i<=10000; i++)
+		{
+			boolean result=checkMeshukhlalNumber(i);
+			if(result==true) {
+			System.out.println(result+" - "+i);
+			}
+		}
+		scanner.close();
+	*/
+		
+		
+	/*	//Question 4: 
+		// a)Write a method that return the sum of the digits of the number.
+		// b)Write a new method that count the number of 
+		//   elements in the array that there sum of the digits are 10.
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter your number:");
+		int number = scanner.nextInt();	
+		int sum,elementCounter;
+		sum=getSumOfNumberDigits(number);
+		System.out.println("the sum of number digits is: "+sum);
+		System.out.println();
+		
+		System.out.println("Enter the array length:");
+		int arraySize = scanner.nextInt();	
+		int[] array = new int[arraySize];
+		System.out.print("Enter "+arraySize+" numbers: ");
+		for(int i=0 ; i<arraySize ; i++)
+		{
+			array[i] = scanner.nextInt();
+		}
+		elementCounter=checkSumOfArrayElements(array,arraySize);
+		System.out.println("the number of elements in the array that there sum of the digits are 10: "+elementCounter);
+		scanner.close();
+	*/
+		
+		//Question 5: 
+		//Write a method that print a Rhombus By input sign char.
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter your number:");
+		int number = scanner.nextInt();
+		System.out.println("Enter your sign char:");
+		String sign = scanner.next();
+		printRhombusByChar(number,sign);
+		scanner.close();
+
+	}
+
+}

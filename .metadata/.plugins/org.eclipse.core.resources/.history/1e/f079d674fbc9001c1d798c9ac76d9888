@@ -1,0 +1,16 @@
+package myBasicCalculator;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CalculatorTest {
+
+	@Test
+	void checkIfIntIsFive() 
+	{
+		int num = 5 ;
+		//fail("Not yet implemented");
+	}
+
+}

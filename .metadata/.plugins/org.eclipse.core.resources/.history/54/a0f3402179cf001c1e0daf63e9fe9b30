@@ -1,0 +1,10 @@
+package lambdaExpressions.personEx;
+
+import java.util.List;
+
+@FunctionalInterface
+public interface Printable 
+{
+	void print(Person person);
+
+}

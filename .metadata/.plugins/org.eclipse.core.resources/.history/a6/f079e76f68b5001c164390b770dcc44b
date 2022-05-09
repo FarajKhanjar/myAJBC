@@ -1,0 +1,29 @@
+package bootcamp.basic.methods;
+
+import java.util.Scanner;
+
+public class Lesson_exercises {
+
+	public static float averageOfThreeGrades() //This method returned the average of three grades
+	{
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter your first grade:");
+		float num1 = scanner.nextFloat();
+		System.out.println("Enter your second grade:");
+		float num2 = scanner.nextFloat();
+		System.out.println("Enter your third grade:");
+		float num3 = scanner.nextFloat();
+		
+		float sum=num1+num2+num3;
+		float avg = sum/3;
+		scanner.close();
+		return avg;
+	}
+	public static void main(String[] args) {
+		
+		float avg=averageOfThreeGrades();
+		System.out.println("The average is: %.2f"+avg);
+		
+	}
+
+}

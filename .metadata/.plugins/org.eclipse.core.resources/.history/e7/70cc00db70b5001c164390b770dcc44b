@@ -1,0 +1,69 @@
+package bootcamp.basic.methods;
+
+import java.util.Scanner;
+
+public class Ex_6 {
+
+	public static int getPlusOneNumber(int number) //This method returned a new number +1 for each digit.
+	
+	{		
+		int moduloDigit,newDigit,multiply=1,result=0;
+		 while(number !=0) {
+			 moduloDigit = number%10;
+			 newDigit = moduloDigit + 1;
+			 if(newDigit==10) {
+				 newDigit=0;
+			 }
+			 result+=(newDigit*multiply);
+			 multiply*=10;
+			 number/=10;
+		 }
+			return result;
+			
+	}
+	
+	public static int checkDigitsOfTwoNumbers(int number1,int number2) //This method returned a new number +1 for each digit.
+	
+	{		
+		int moduloDigit,newDigit,multiply=1,result=0;
+		 while(number !=0) {
+			 moduloDigit = number%10;
+			 newDigit = moduloDigit + 1;
+			 if(newDigit==10) {
+				 newDigit=0;
+			 }
+			 result+=(newDigit*multiply);
+			 multiply*=10;
+			 number/=10;
+		 }
+			return result;
+			
+	}
+	public static void main(String[] args) {
+	
+		
+	/*	//Question 1: 
+		//Write a method that returned a new number, that make +1 for each digit.
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter your number:");
+		int number = scanner.nextInt();
+		int newNumber=getPlusOneNumber(number);
+		System.out.println("The new number is: "+newNumber);
+	*/
+		
+		
+		//Question 2: 
+		//
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the first number:");
+		int number1 = scanner.nextInt();
+		System.out.println("Enter the second number:");
+		int number2 = scanner.nextInt();
+		int newNumber=checkDigitsOfTwoNumbers(number1,number2);
+		System.out.println("The new number is: "+newNumber);
+	
+		scanner.close();
+
+	}
+
+}
