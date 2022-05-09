@@ -23,8 +23,7 @@ public class Runner {
 						             .map(name -> name.getName())
 						             .collect(Collectors.toList());
 		namesOfGameCharacters.forEach(list -> System.out.println(list));
-		
-		
+				
 		
 		
 		
@@ -34,7 +33,6 @@ public class Runner {
 				                      .sorted(Comparator.comparing(character ->character.getHitPoints()))
 				                      .collect(Collectors.toList()); 	              
 		sortedListByHitPoints.forEach(list -> System.out.println(list));
-
 		
 		
 		
@@ -50,8 +48,7 @@ public class Runner {
 		double avg = sum / length;
 		System.out.printf("The average hit points of characters in level 120: "+ avg+"\n");
 		
-		
-		
+				
 		
 		System.out.println();
 		//[------------------------------List #4----------------------------]
