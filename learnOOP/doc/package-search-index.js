@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"bootcamp.oop.drinksProject.DrinksMachine"},{"l":"bootcamp.oop.drinksProject.DrinksMachine_classes"},{"l":"bootcamp.oop.drinksProject.DrinksMachine_interfaces"}];updateSearchResults();
