@@ -23,6 +23,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Faraj\Downloads\AJBC-Instructor-master (1)\AJBC-Instructor-master\DesignPatterns"/>
 			<item value="C:\Users\Faraj\Downloads\AJBC-Instructor-master\AJBC-Instructor-master\ExceptionHandling"/>
 			<item value="C:\Users\Faraj\Downloads\SubmarineGameGit-main\SubmarineGameGit-main\SubmarineGame"/>
 			<item value="C:\Users\Faraj\Downloads\SubmarineGame-main\SubmarineGame-main\SubmarineProject"/>
