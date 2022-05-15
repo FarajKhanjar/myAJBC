@@ -1,7 +1,9 @@
-package ajbc.patterns.decorator;
+package structuralPatterns.decorator;
 
-public class Runner {
-	public static void main(String[] args) {
+public class Runner 
+{
+	public static void main(String[] args) 
+	{
         String salaryRecords = "Name,Salary\nJohn Smith,100000\nSteven Jobs,912000";
         DataSourceDecorator encoded = new CompressionDecorator(
                                          new EncryptionDecorator(

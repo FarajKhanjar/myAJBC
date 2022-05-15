@@ -1,4 +1,4 @@
-package ajbc.patterns.decorator.exe;
+package structuralPatterns.decorator.exe;
 
 public class FancyDressDecorator extends DressDecorator {
 

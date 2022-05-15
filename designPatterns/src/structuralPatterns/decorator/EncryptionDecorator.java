@@ -1,9 +1,10 @@
-package ajbc.patterns.decorator;
+package structuralPatterns.decorator;
 
 
 import java.util.Base64;
 
-public class EncryptionDecorator extends DataSourceDecorator {
+public class EncryptionDecorator extends DataSourceDecorator 
+{
 
     public EncryptionDecorator(DataSource source) {
         super(source);

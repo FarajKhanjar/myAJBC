@@ -1,6 +1,7 @@
-package ajbc.patterns.decorator;
+package structuralPatterns.decorator;
 
-public class DataSourceDecorator implements DataSource {
+public class DataSourceDecorator implements DataSource 
+{
     private DataSource wrappee;
 
     DataSourceDecorator(DataSource source) {

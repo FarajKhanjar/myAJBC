@@ -1,4 +1,4 @@
-package ajbc.patterns.decorator;
+package structuralPatterns.decorator;
 
 
 import java.io.ByteArrayInputStream;
@@ -10,7 +10,8 @@ import java.util.zip.Deflater;
 import java.util.zip.DeflaterOutputStream;
 import java.util.zip.InflaterInputStream;
 
-public class CompressionDecorator extends DataSourceDecorator {
+public class CompressionDecorator extends DataSourceDecorator 
+{
     private static final int COMP_LEVEL = 6, BUFFER_SIZE = 512;
 	private int compLevel;
 

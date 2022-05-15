@@ -1,4 +1,4 @@
-package ajbc.patterns.decorator.exe;
+package structuralPatterns.decorator.exe;
 
 public class Runner {
 	public static void main(String[] args) {

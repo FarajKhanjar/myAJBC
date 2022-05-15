@@ -1,4 +1,4 @@
-package ajbc.patterns.decorator;
+package structuralPatterns.decorator;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -6,7 +6,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStream;
 
-public class FileDataSource implements DataSource {
+public class FileDataSource implements DataSource 
+{
 
 	private String name;
 
