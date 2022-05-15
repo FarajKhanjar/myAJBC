@@ -1,4 +1,4 @@
-package ajbc.patterns.observer.exe;
+package behavioralPatterns.observer.exe;
 
 public class EmailListener implements EventListener {
     private String email;

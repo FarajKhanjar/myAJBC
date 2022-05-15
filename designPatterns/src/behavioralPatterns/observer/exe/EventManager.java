@@ -1,4 +1,4 @@
-package ajbc.patterns.observer.exe;
+package behavioralPatterns.observer.exe;
 
 import java.io.File;
 import java.util.ArrayList;

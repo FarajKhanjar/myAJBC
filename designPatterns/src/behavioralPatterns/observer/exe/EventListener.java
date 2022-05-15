@@ -1,4 +1,4 @@
-package ajbc.patterns.observer.exe;
+package behavioralPatterns.observer.exe;
 
 public interface EventListener {
 	void update(Report report);

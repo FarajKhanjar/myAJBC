@@ -1,4 +1,4 @@
-package ajbc.patterns.observer;
+package behavioralPatterns.observer;
 
 public class Runner {
 	public static void main(String[] args) {

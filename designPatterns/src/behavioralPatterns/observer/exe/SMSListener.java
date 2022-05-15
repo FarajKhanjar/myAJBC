@@ -1,4 +1,4 @@
-package ajbc.patterns.observer.exe;
+package behavioralPatterns.observer.exe;
 
 
 public class SMSListener implements EventListener {

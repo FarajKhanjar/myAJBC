@@ -1,4 +1,4 @@
-package ajbc.patterns.observer;
+package behavioralPatterns.observer;
 
 public enum EventType {
 	SAVE, OPEN;
