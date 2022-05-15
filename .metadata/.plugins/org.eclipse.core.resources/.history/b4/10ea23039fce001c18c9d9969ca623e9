@@ -1,8 +1,0 @@
-package generics.example;
-
-import java.util.List;
-
-public interface GenericInterface<T> 
-{
-    public List<Integer> reverseList(T data);
-}
