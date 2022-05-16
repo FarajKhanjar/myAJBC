@@ -1,4 +1,4 @@
-package ajbc.patterns.state.exe;
+package behavioralPatterns.state.exe;
 
 public class GumDispenser {
 	private static final int NUM_GUMS = 1000;

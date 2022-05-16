@@ -1,4 +1,4 @@
-package ajbc.patterns.state;
+package behavioralPatterns.state;
 
 
 public class PlayingState extends State {

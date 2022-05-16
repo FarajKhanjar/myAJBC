@@ -1,4 +1,4 @@
-package ajbc.patterns.state;
+package behavioralPatterns.state;
 
 /**
  * Concrete states provide the special implementation for all interface methods.

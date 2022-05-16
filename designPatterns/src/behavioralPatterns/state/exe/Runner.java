@@ -1,4 +1,4 @@
-package ajbc.patterns.state.exe;
+package behavioralPatterns.state.exe;
 
 public class Runner {
 	public static void main(String[] args) {

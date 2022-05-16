@@ -1,4 +1,4 @@
-package ajbc.patterns.state.exe;
+package behavioralPatterns.state.exe;
 
 public class Has15State extends State {
 

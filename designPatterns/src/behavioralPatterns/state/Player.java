@@ -1,4 +1,4 @@
-package ajbc.patterns.state;
+package behavioralPatterns.state;
 
 import java.util.ArrayList;
 import java.util.List;

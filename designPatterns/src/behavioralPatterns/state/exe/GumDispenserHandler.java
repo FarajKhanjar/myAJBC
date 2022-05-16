@@ -1,4 +1,4 @@
-package ajbc.patterns.state.exe;
+package behavioralPatterns.state.exe;
 
 import java.util.Scanner;
 
