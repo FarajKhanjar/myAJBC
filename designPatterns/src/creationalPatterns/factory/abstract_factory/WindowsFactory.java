@@ -1,4 +1,4 @@
-package ajbc.patterns.abstract_factory;
+package creationalPatterns.factory.abstract_factory;
 /**
  * Each concrete factory extends basic factory and responsible for creating
  * products of a single variety.

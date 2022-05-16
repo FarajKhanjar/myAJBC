@@ -1,4 +1,4 @@
-package ajbc.patterns.abstract_factory;
+package creationalPatterns.factory.abstract_factory;
 /**
  * All products families have the same varieties (MacOS/Windows).
  *

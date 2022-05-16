@@ -1,4 +1,4 @@
-package ajbc.patterns.abstract_factory.exe;
+package creationalPatterns.factory.abstract_factory.exe;
 
 /**
  * Factory users don't care which concrete factory they use since they work with

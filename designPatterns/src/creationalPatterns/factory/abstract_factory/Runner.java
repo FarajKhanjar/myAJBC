@@ -1,4 +1,4 @@
-package ajbc.patterns.abstract_factory;
+package creationalPatterns.factory.abstract_factory;
 
 public class Runner {
 	 /**

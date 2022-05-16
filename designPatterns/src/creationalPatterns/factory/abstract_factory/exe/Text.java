@@ -1,4 +1,4 @@
-package ajbc.patterns.abstract_factory.exe;
+package creationalPatterns.factory.abstract_factory.exe;
 
 public interface Text {
 	void render();

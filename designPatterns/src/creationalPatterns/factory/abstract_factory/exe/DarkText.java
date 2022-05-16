@@ -1,4 +1,4 @@
-package ajbc.patterns.abstract_factory.exe;
+package creationalPatterns.factory.abstract_factory.exe;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -12,17 +12,18 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-public class BrightText implements Text {
+public class DarkText implements Text {
 	JPanel panel = new JPanel();
     JFrame frame = new JFrame();
     JButton button;
+    
 	@Override
 	public void render() {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JLabel label = new JLabel("Bright Text - Dark Theme");
+        JLabel label = new JLabel("Dark Text - Bright Theme");
         label.setOpaque(true);
-        label.setBackground(new Color(0, 0, 0));
-        label.setForeground(new Color(255, 255, 255));
+        label.setForeground(new Color(0, 0, 0));
+        label.setBackground(new Color(255, 255, 255));
         label.setFont(new Font("", Font.BOLD, 44));
         label.setHorizontalAlignment(SwingConstants.CENTER);
         panel.setLayout(new FlowLayout(FlowLayout.CENTER));

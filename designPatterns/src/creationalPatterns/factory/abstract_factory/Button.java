@@ -1,4 +1,4 @@
-package ajbc.patterns.abstract_factory;
+package creationalPatterns.factory.abstract_factory;
 /**
  * Abstract Factory assumes that you have several families of products,
  * structured into separate class hierarchies (Button/Checkbox). All products of
