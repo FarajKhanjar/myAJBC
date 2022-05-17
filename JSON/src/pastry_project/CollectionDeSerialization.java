@@ -1,4 +1,4 @@
-package lesson_examples;
+package pastry_project;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -19,10 +19,12 @@ import com.google.gson.stream.JsonReader;
  * @author Guy Tordjman
  *
  */
-public class CollectionDeSerialization {
+public class CollectionDeSerialization 
+{
 
-	public static void run() {
-		File file = new File(Path.of("myFiles", "addArray.json").toString());
+	public static void run() 
+	{
+		File file = new File(Path.of("myFiles", "pastries.json").toString());
 		try (FileReader fileReader1 = new FileReader(file);
 				FileReader fileReader2 = new FileReader(file)) {
 
@@ -31,14 +33,14 @@ public class CollectionDeSerialization {
 			Gson gson = new Gson();
 			
 			//arrays are deserialized immediately
-			Address[] addArray = gson.fromJson(jsonReader, Address[].class);
-			for (Address address : addArray) {
-				System.out.println(address);
+			Pastry[] pastriesArray = gson.fromJson(jsonReader, Pastry[].class);
+			for (Pastry pastry : pastriesArray) {
+				System.out.println(pastry);
 			}
 			//collections need TypeToken
 			jsonReader = new JsonReader(fileReader2);
-			Type addressListType = new TypeToken<ArrayList<Address>>(){}.getType();
-			List<Address> addList = gson.fromJson(jsonReader,addressListType);
+			Type addressListType = new TypeToken<ArrayList<Pastry>>(){}.getType();
+			List<Pastry> addList = gson.fromJson(jsonReader,addressListType);
 			System.out.println("==========================");
 			addList.forEach(System.out::println);
 		} catch (FileNotFoundException e) {

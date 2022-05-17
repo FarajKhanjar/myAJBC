@@ -1,5 +1,6 @@
 package lesson_examples;
 
+import pastry_project.CollectionDeSerialization;
 
 public class Runner {
 	public static void main(String[] args) {
@@ -7,7 +8,7 @@ public class Runner {
 //		BasicDeSerialization.run();
 //		NestedSerialization.run();
 //		NestedDeSerialization.run();
-//		CollectionSerialization.run();
+		CollectionSerialization.run();
 		CollectionDeSerialization.run();
 	}
 }
