@@ -1,0 +1,61 @@
+{
+  "students": 
+  [
+   {
+     "idNumber":"11111111",
+     "isMale":true,
+     "firstName":"Faraj",
+     "lastName":"Khanjar",
+     "notes":[
+     {
+      "idNote":"123",
+      "fromStudent":"Faraj",
+      "toStudent":"Rinat",
+      "messege":"Hi! let's meet after school in the gym."
+     }
+             ]
+   },
+     
+   {
+     "idNumber":"22222222",
+     "isMale":true,
+     "firstName":"Sami",
+     "lastName":"cohen",
+     "notes":[
+     {
+         "idNote":"124",
+         "fromStudent":"Sami",
+         "toStudent":"Maya",
+         "messege":"Look at this teacher, she is so funny."
+      },
+      {
+         "idNote":"125",
+         "fromStudent":"Sami",
+         "toStudent":"Maya",
+         "messege":"I miss you my friend!"
+      }
+              ]
+   },
+    
+   {
+     "idNumber":"33333333",
+     "isMale":false,
+     "firstName":"Suzi",
+     "lastName":"Vaknin",
+     "notes": [
+       {
+         "idNote":"126",
+         "fromStudent":"Suzi",
+         "toStudent":"Faraj",
+         "messege":"Do you talk with Rinat about the gym today?"
+       },
+       {
+         "idNote":"127",
+         "fromStudent":"Suzi",
+         "toStudent":"Faraj",
+         "messege":"Please summarize the math lesson for me."
+        }
+               ]
+   }           
+ ]
+}
