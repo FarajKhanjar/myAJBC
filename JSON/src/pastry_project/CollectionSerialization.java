@@ -8,24 +8,24 @@ import java.util.List;
 
 import com.google.gson.Gson;
 
-/**
- * using GSON library to serialize a User POJO class 
- * @author Guy Tordjman
- *
- */
 public class CollectionSerialization 
 {
 	public static void run() 
 	{
 		Pastry pastry_1 = new Pastry("Potato Cinnamon Rolls", 550,Label.PAREVE, createPastry_1IngredientList());
-		Pastry pastry_2 = new Pastry("Apple-Cheese Danish", 750,Label.DAIRY, createPastry_2IngredientList());
+		Pastry pastry_2 = new Pastry("Cheese-Beef Danish", 750,Label.MEAT, createPastry_2IngredientList());
 		Pastry pastry_3 = new Pastry("Blueberry-Cream Cheese", 400,Label.DAIRY, createPastry_3IngredientList());
 		
-		Pastry[] pastriesArray = {pastry_1,pastry_2,pastry_3};
+		List<Pastry> pastriesList = new ArrayList<>();
+		pastriesList.add(pastry_1);
+		pastriesList.add(pastry_2);
+		pastriesList.add(pastry_3);
+
 		Gson gson = new Gson();
-		String pastriesArrayJson = gson.toJson(pastriesArray);
-		System.out.println(pastriesArray);
-		File file = new File("myFiles/pastries.json");
+		String pastriesArrayJson = gson.toJson(pastriesList);
+		System.out.println(pastriesList);
+		
+		File file = new File("myFiles/pastries_list.json");
 		try (FileWriter arrayWriter = new FileWriter(file))
 		{
 			arrayWriter.write(pastriesArrayJson);
@@ -53,7 +53,7 @@ public class CollectionSerialization
 		ingredientList.add(new Ingredient("vanilla",1.5f));
 		ingredientList.add(new Ingredient("butter",60f));
 		ingredientList.add(new Ingredient("eggs",50f));
-		ingredientList.add(new Ingredient("milk",200f));
+		ingredientList.add(new Ingredient("beef pesess",200f));
 		return ingredientList;
 	}
 	

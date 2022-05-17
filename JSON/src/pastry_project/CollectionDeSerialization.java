@@ -21,10 +21,9 @@ import com.google.gson.stream.JsonReader;
  */
 public class CollectionDeSerialization 
 {
-
 	public static void run() 
 	{
-		File file = new File(Path.of("myFiles", "pastries.json").toString());
+		File file = new File(Path.of("myFiles", "pastries_list.json").toString());
 		try (FileReader fileReader1 = new FileReader(file);
 				FileReader fileReader2 = new FileReader(file)) {
 

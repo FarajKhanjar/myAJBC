@@ -8,7 +8,8 @@ import java.util.List;
 
 import com.google.gson.Gson;
 
-public class BasicSerialization {
+public class BasicSerialization 
+{
 
 	public static void run() 
 	{

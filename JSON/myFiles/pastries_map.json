@@ -1,0 +1,101 @@
+{
+  "PAREVE": [
+    {
+      "name": "Potato Cinnamon Rolls",
+      "age": 550,
+      "lable": "PAREVE",
+      "ingredientList": [
+        {
+          "name": "flour",
+          "weight": 4.25
+        },
+        {
+          "name": "milk",
+          "weight": 100.0
+        },
+        {
+          "name": "potato",
+          "weight": 150.0
+        },
+        {
+          "name": "butter",
+          "weight": 30.0
+        },
+        {
+          "name": "eggs",
+          "weight": 75.0
+        }
+      ]
+    }
+  ],
+  "DAIRY": [
+    {
+      "name": "Blueberry-Cream Cheese",
+      "age": 400,
+      "lable": "DAIRY",
+      "ingredientList": [
+        {
+          "name": "lemon juice",
+          "weight": 45.0
+        },
+        {
+          "name": "sugar",
+          "weight": 250.0
+        },
+        {
+          "name": "blueberry",
+          "weight": 1.5
+        },
+        {
+          "name": "milk",
+          "weight": 150.0
+        },
+        {
+          "name": "butter",
+          "weight": 60.0
+        },
+        {
+          "name": "vanilla",
+          "weight": 25.5
+        },
+        {
+          "name": "eggs",
+          "weight": 100.0
+        }
+      ]
+    }
+  ],
+  "MEAT": [
+    {
+      "name": "Cheese-Beef Danish",
+      "age": 750,
+      "lable": "DAIRY",
+      "ingredientList": [
+        {
+          "name": "frozen puff",
+          "weight": 150.0
+        },
+        {
+          "name": "cooking apples",
+          "weight": 55.0
+        },
+        {
+          "name": "vanilla",
+          "weight": 1.5
+        },
+        {
+          "name": "butter",
+          "weight": 60.0
+        },
+        {
+          "name": "eggs",
+          "weight": 50.0
+        },
+        {
+          "name": "beef pesess",
+          "weight": 200.0
+        }
+      ]
+    }
+  ]
+}

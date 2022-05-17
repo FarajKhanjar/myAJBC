@@ -8,12 +8,6 @@ import java.nio.file.Path;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 
-/**
- * using GSON library to de-serialize a string to a User POJO class
- * 
- * @author Guy Tordjman
- *
- */
 public class BasicDeSerialization 
 {
 
