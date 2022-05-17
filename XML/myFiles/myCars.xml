@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cars>
+  <car_1>
+    <manufacturer>Ford</manufacturer>
+    <model>Focus</model>
+    <year>2015</year>
+    <licencePlate unique="true">
+      <number>7307313</number>
+      <color>yellow</color>
+    </licencePlate>
+  </car_1>
+  <car_2>
+    <manufacturer>Toyota</manufacturer>
+    <model>Auris</model>
+    <year>2021</year>
+    <licencePlate unique="true">
+      <number>4715521</number>
+      <color>yellow</color>
+    </licencePlate>
+  </car_2>
+  <car_3>
+    <manufacturer>Volkswagen</manufacturer>
+    <model>Golf</model>
+    <year>2020</year>
+    <licencePlate unique="true">
+      <number>07474111</number>
+      <color>white</color>
+    </licencePlate>
+  </car_3>
+  <car_4>
+    <manufacturer>Seat</manufacturer>
+    <model>Leon</model>
+    <year>2019</year>
+    <licencePlate unique="true">
+      <number />
+      <color>white</color>
+    </licencePlate>
+  </car_4>
+  <car_5>
+    <manufacturer>Opel</manufacturer>
+    <model>Astra</model>
+    <year>2013</year>
+    <licencePlate unique="true">
+      <number>15555521</number>
+      <color>yellow</color>
+    </licencePlate>
+  </car_5>
+</cars>

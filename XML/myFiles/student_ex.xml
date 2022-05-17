@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Class>
+  <student idStudent="11111111">
+	<gender>male</gender>
+	<firstName>Faraj</firstName>
+	<lastName>Chan</lastName>
+	<notes>
+	  <note idNote="123">
+		<fromStudent>Faraj</fromStudent>
+		<toStudent>Rinat</toStudent>
+		<messege>Hi! let's meet after school in the gym.</messege>
+	  </note>
+	</notes>
+  </student>
+  	
+  <student idStudent="22222222">
+	<gender>male</gender>
+	<firstName>Sami</firstName>
+	<lastName>cohen</lastName>
+	<notes>
+	  <note idNote="124">
+		<fromStudent>Sami</fromStudent>
+		<toStudent>Maya</toStudent>
+		<messege>Look at this teacher, she is so funny.</messege>
+	  </note>
+	</notes>
+  </student>
+  	
+  <student idStudent="33333333">
+	<gender>female</gender>
+	<firstName>Suzi</firstName>
+	<lastName>Vaknin</lastName>
+	<notes>
+	  <note idNote="125">
+		<fromStudent>Suzi</fromStudent>
+		<toStudent>Faraj</toStudent>
+		<messege>Do you talk with Rinat about the gym today?</messege>
+	  </note>
+	  <note idNote="126">
+		<fromStudent>Suzi</fromStudent>
+		<toStudent>Bana</toStudent>
+		<messege>Please summarize the math lesson for me.</messege>
+	  </note>
+	 </notes>
+  </student>
+</Class>
