@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="bootcamp.oop.project.DrinksMachine_classes.Drink"/>
-    <fullyQualifiedTypeName name="bootcamp.oop.project.DrinksMachine_classes.Cola"/>
-    <fullyQualifiedTypeName name="bootcamp.oop.project.DrinksMachine_classes.Sprite"/>
-    <fullyQualifiedTypeName name="bootcamp.oop.project.DrinksMachine_classes.Cappuccino"/>
-    <fullyQualifiedTypeName name="bootcamp.oop.project.DrinksMachine_classes.Espresso"/>
-    <fullyQualifiedTypeName name="bootcamp.oop.project.DrinksMachine_classes.Latte"/>
     <fullyQualifiedTypeName name="bootcamp.oop.project.DrinksMachine_classes.Chocolate"/>
     <fullyQualifiedTypeName name="bootcamp.oop.project.DrinksMachine_classes.AppleJuice"/>
     <fullyQualifiedTypeName name="bootcamp.oop.project.DrinksMachine_classes.OrangeJuice"/>
@@ -21,10 +15,8 @@
     <fullyQualifiedTypeName name="java.time.Month"/>
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.io.Writer"/>
-    <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="java.io.Reader"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
@@ -36,7 +28,6 @@
     <fullyQualifiedTypeName name="print_writer.PrintWriterDemo"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="BufferReaderWriter.BufferReaderWriter"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
@@ -54,10 +45,19 @@
     <fullyQualifiedTypeName name="java.util.AbstractList"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="java.io.EOFException"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.awt.Label"/>
+    <fullyQualifiedTypeName name="com.google.gson.Gson"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="pastry_project.Label"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

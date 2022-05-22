@@ -7,7 +7,7 @@ public class Runner
 	{
 		//pastry object
 		//BasicSerialization.run();
-		BasicDeSerialization.run();
+		//BasicDeSerialization.run();
 		
 		//list of pastry objects
 		//CollectionSerialization.run();
@@ -15,7 +15,7 @@ public class Runner
 		
 		//Map of pastry objects
 		//MapSerialization.run();
-		MapDeSerialization.run();
+		//MapDeSerialization.run();
 	}
 	
 }

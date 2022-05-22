@@ -21,7 +21,7 @@ public class CollectionSerialization
 		pastriesList.add(pastry_2);
 		pastriesList.add(pastry_3);
 
-		Gson gson = new Gson();
+		Gson gson = new Gson().newBuilder().setPrettyPrinting().create();
 		String pastriesArrayJson = gson.toJson(pastriesList);
 		System.out.println(pastriesList);
 		

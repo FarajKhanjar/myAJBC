@@ -3,6 +3,7 @@ package xml.Cars_project;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.jdom2.Document;
@@ -10,12 +11,12 @@ import org.jdom2.Element;
 import org.jdom2.JDOMException;
 import org.jdom2.input.SAXBuilder;
 
-
 public class QueryCars 
 {
 	public static void run() 
 	{
 		List<Car> cars = new ArrayList<>();
+
 		try {
 			File inputFile = new File("myFiles/myCars.xml");
 			SAXBuilder saxBuilder = new SAXBuilder();
@@ -24,10 +25,10 @@ public class QueryCars
 			Element classElement = document.getRootElement();
 
 			List<Element> carsList = classElement.getChildren();
-			System.out.println("----------------------------");
 
 			for (int i = 0; i < carsList.size(); i++) 
 			{
+				boolean isEqual =true;
 				Element car = carsList.get(i);
 				Element plateNumber = carsList.get(i).getChild("licencePlate").getChild("number");
 				Element plateColor = carsList.get(i).getChild("licencePlate").getChild("color");
@@ -35,8 +36,23 @@ public class QueryCars
 				System.out.println("Current Element:" + car.getName());
 				LicencePlate plateTmp = parseLicencePlate(plateNumber,plateColor);
 				Car tmp = parseCar(car,plateTmp);
-				cars.add(tmp);
-				System.out.println(tmp);
+				
+				for(Car car2:cars)
+				{
+					if(!car2.getLicencePlate().equals(tmp.getLicencePlate()))
+					{
+						isEqual=false;
+						break;
+					}
+				}
+				if(isEqual)
+				{
+					cars.add(tmp);
+					System.out.println(tmp);
+					System.out.println("----------------------------");
+				}
+					
+
 			}
 		} catch (JDOMException e) {
 			e.printStackTrace();

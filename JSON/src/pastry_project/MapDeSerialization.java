@@ -1,12 +1,9 @@
 package pastry_project;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Type;
-import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -19,7 +16,6 @@ public class MapDeSerialization
 {
 	public static void run() 
 	{
-			//map are deserialized immediately
 			Map<Label, List<Pastry>> pastryMap = parseToPastryMap();
 			pastryMap.forEach((lable, pastryList)->{
 				System.out.println(lable);

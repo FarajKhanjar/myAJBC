@@ -13,19 +13,19 @@ import org.jdom2.input.SAXBuilder;
 import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
 
-public class ModifyCars {
+public class ModifyCars 
+{
 
-	public static void run() {
+	public static void run() 
+	{
 		try {
 			File inputFile = new File("myFiles/myCars.xml");
 			SAXBuilder saxBuilder = new SAXBuilder();
 			Document document = saxBuilder.build(inputFile);
 			Element rootElement = document.getRootElement();
 
-			// get first supercar
 			Element car_1Element = rootElement.getChild("car_1");
 
-			// loop the supercar child node
 			List<Element> list = car_1Element.getChildren();
 
 			for (int i = 0; i < list.size(); i++) 
@@ -52,5 +52,4 @@ public class ModifyCars {
 			e.printStackTrace();
 		}
 	}
-
 }

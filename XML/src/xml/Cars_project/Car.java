@@ -15,6 +15,12 @@ public class Car
 		this.year = year;
 		this.licencePlate = licencePlate;
 	}
+	
+	public LicencePlate getLicencePlate() 
+	{
+		return licencePlate;
+	}
+
 
 	@Override
 	public String toString() {

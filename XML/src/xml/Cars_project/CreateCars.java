@@ -117,7 +117,7 @@ public class CreateCars
 			Element car_4licencePlateElement = new Element("licencePlate");
 			car_4licencePlateElement.setAttribute(new Attribute("unique", "true"));
 			Element car_4Element4 = new Element("number");
-			car_3Element4.setText("07474111");
+			car_4Element4.setText("15555521");
 			Element car_4Element5 = new Element("color");
 			car_4Element5.setText("white");
 			
@@ -145,7 +145,7 @@ public class CreateCars
 			Element car_5Element4 = new Element("number");
 			car_5Element4.setText("15555521");
 			Element car_5Element5 = new Element("color");
-			car_5Element5.setText("yellow");
+			car_5Element5.setText("white");
 			
 			
 			car_5Element.addContent(car_5Element1);

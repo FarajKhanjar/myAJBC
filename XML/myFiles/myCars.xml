@@ -23,7 +23,7 @@
     <model>Golf</model>
     <year>2020</year>
     <licencePlate unique="true">
-      <number>07474111</number>
+      <number>12575784</number>
       <color>white</color>
     </licencePlate>
   </car_3>
@@ -32,7 +32,7 @@
     <model>Leon</model>
     <year>2019</year>
     <licencePlate unique="true">
-      <number />
+      <number>15555521</number>
       <color>white</color>
     </licencePlate>
   </car_4>
@@ -42,7 +42,7 @@
     <year>2013</year>
     <licencePlate unique="true">
       <number>15555521</number>
-      <color>yellow</color>
+      <color>white</color>
     </licencePlate>
   </car_5>
 </cars>

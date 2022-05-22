@@ -15,7 +15,7 @@ public class BasicSerialization
 	{
 		Pastry pastry = new Pastry("Potato Cinnamon Rolls", 550,Label.PAREVE, createPastry_1IngredientList());
 
-		Gson gson = new Gson();
+		Gson gson = new Gson().newBuilder().setPrettyPrinting().create();;
 		String pastryJson = gson.toJson(pastry);
 		System.out.println(pastry);
 		File file = new File("myFiles/onePastry.json");

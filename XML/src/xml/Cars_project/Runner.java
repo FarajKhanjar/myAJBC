@@ -5,7 +5,7 @@ public class Runner
 	public static void main(String[] args) 
 	{
 		
-	//CreateCars.run();
+	CreateCars.run();
 	//ModifyCars.run();
 	QueryCars.run();
 	
