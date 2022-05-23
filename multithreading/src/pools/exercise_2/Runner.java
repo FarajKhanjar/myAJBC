@@ -11,6 +11,7 @@ public class Runner
     {
         ForkJoinPool pool = new ForkJoinPool();
         
+        
         for (int i = 0; i < ARRAY_SIZE; i++) 
         {
         	array[i] = Math.random() * 10;
