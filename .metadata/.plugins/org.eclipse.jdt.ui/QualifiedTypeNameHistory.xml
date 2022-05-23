@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="bootcamp.oop.project.DrinksMachine_classes.Chocolate"/>
-    <fullyQualifiedTypeName name="bootcamp.oop.project.DrinksMachine_classes.AppleJuice"/>
-    <fullyQualifiedTypeName name="bootcamp.oop.project.DrinksMachine_classes.OrangeJuice"/>
-    <fullyQualifiedTypeName name="bootcamp.oop.project.DrinksMachine_interfaces.Produceable"/>
-    <fullyQualifiedTypeName name="java.time.LocalTime"/>
-    <fullyQualifiedTypeName name="bootcamp.oop.exam.toysProject_classes.Kid"/>
-    <fullyQualifiedTypeName name="bootcamp.oop.exam.toysProject_interface.Playable"/>
     <fullyQualifiedTypeName name="bootcamp.oop.exam.toysProject_classes.Toy"/>
     <fullyQualifiedTypeName name="bootcamp.oop.exam.toysProject_classes.BrokenToy"/>
     <fullyQualifiedTypeName name="bootcamp.oop.exam.toysProject_classes.Soft"/>
@@ -58,6 +51,13 @@
     <fullyQualifiedTypeName name="pastry_project.Label"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.Queue"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.locks.Condition"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.locks.Lock"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.locks.ReentrantLock"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.Semaphore"/>
+    <fullyQualifiedTypeName name="synchronization.diningPhilosophersProblem.Runner"/>
 </qualifiedTypeNameHistroy>

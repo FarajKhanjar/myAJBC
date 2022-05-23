@@ -11,8 +11,8 @@ import java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy;
 
 public class Runner 
 {
-	private static final int CORE_THREADS = 5;
-	private static final int MAX_POOL_SIZE = 5;
+	private static final int CORE_THREADS = 2;
+	private static final int MAX_POOL_SIZE = 4;
 	private static final int KEEP_ALIVE_TIME = 1;
 	private static final int CAPACITY = 3;
 	private static final int FIRST_ID = 1;
