@@ -4,12 +4,12 @@ import java.util.concurrent.*;
 
 public class Runner 
 {
-	private static final int ARRAY_SIZE = 8;
+	private static final int ARRAY_SIZE = 2000;
 	protected static double[] array = new double[ARRAY_SIZE];
 	
     public static void main(String[] args) throws ExecutionException, InterruptedException 
     {
-        ForkJoinPool pool = new ForkJoinPool();
+        ForkJoinPool pool = new ForkJoinPool(); //without thread number, so it take the maximum number in my computer.
         
         
         for (int i = 0; i < ARRAY_SIZE; i++) 

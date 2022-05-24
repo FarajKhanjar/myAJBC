@@ -4,8 +4,12 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.concurrent.*;
 import java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy;
 
@@ -40,15 +44,15 @@ public class Runner
 							if(word.isEmpty()) // word=" ";
 								continue;
 							
+							synchronized(textCountMap) {
 							if(!textCountMap.containsKey(word)) 
 							{
 								textCountMap.put(word, FIRST_ID);
 							}
 							else {
-								if(textCountMap.get(word)==null)
-									continue;
 								textCountMap.put(word, FIRST_ID + textCountMap.get(word));
 							}
+						  }
 						}
 					});
 				}
@@ -61,6 +65,8 @@ public class Runner
 		pool.shutdown(); // gracefully shutdown
 
 		pool.awaitTermination(30, TimeUnit.SECONDS);
+		List<Entry<String,Integer>> list = new ArrayList<>(textCountMap.entrySet());
+		list.sort(Entry.comparingByValue());
 		
 		textCountMap.entrySet().stream().forEach((word) ->
 		             System.out.println(word.getKey() + "\n           =>[" + word.getValue()+"]"));
