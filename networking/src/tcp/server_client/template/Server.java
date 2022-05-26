@@ -9,7 +9,7 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import networking.udp.server_client.template.ServerSide;
+import udp.server_client.template.ServerSide;
 
 public class Server {
 	private final static int SERVICE_PORT = 8080;

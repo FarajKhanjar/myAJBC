@@ -1,4 +1,4 @@
-package networking.udp.exercise_2;
+package udp.exercise_2;
 
 import java.util.Map;
 import java.util.HashMap;

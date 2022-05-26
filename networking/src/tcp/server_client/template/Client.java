@@ -8,7 +8,7 @@ import java.net.Socket;
 import java.net.SocketException;
 import java.net.UnknownHostException;
 
-import networking.udp.server_client.template.ClientSide;
+import udp.server_client.template.ClientSide;
 
 public class Client 
 {

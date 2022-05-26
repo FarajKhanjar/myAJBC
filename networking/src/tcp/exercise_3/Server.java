@@ -8,17 +8,26 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.HashMap;
+import java.util.Map;
 
-import networking.udp.server_client.template.ServerSide;
+import udp.exercise_2.City;
+import udp.exercise_2.Weather;
+import udp.server_client.template.ServerSide;
 
-public class Server {
+public class Server 
+{
 	private final static int SERVICE_PORT = 8080;
 	private static ServerSocket serverSocket;
 	private static BufferedReader bufferReader;
 	private static PrintWriter writer;
 	private static Socket clientSocket;
+	
 
-	public Server() {
+	
+
+	public Server() 
+	{
 		this.serverSocket = null;
 		this.bufferReader = null;
 		this.writer = null;
@@ -56,6 +65,8 @@ public class Server {
 			System.out.println("Failed to start server on port " + SERVICE_PORT);
 		}
 	}
+	
+	
 
 	public static void main(String[] args) 
 	{

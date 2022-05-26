@@ -1,4 +1,4 @@
-package networking.udp.server_client.template;
+package udp.server_client.template;
 
 import java.io.IOException;
 import java.net.DatagramPacket;

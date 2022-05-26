@@ -1,4 +1,4 @@
-package networking.udp.server_client;
+package udp.server_client;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;

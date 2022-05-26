@@ -7,8 +7,11 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.SocketException;
 import java.net.UnknownHostException;
+import java.time.LocalDateTime;
+import java.util.Map;
+import java.util.HashMap;
 
-import networking.udp.server_client.template.ClientSide;
+import udp.server_client.template.ClientSide;
 
 public class Client 
 {
@@ -18,6 +21,9 @@ public class Client
 	private Socket clientSocket = null;
 	private PrintWriter writer = null;
 	private BufferedReader bufferReader = null;
+	
+	private RackingDevice rackingDevice;
+	private static SystemDataBase DB;
 
 	public Client(String serverName, int serverPort) 
 	{
@@ -27,6 +33,10 @@ public class Client
 		this.clientSocket = null;
 		this.writer = null;
 		this.bufferReader = null;
+		
+		DB = new SystemDataBase();
+		
+		//rackingDevice = new RackingDevice();
 	}
 
 	public void run() throws IOException 
@@ -37,7 +47,13 @@ public class Client
 
 			// sending data
 			writer = new PrintWriter(clientSocket.getOutputStream(), true);
-			writer.println("Hello from the other side");
+			
+			for(int i=0; i<10; i++)
+			{
+			String myLocation = i+") "+ DB.locationMap.values().getClass().toString();
+			writer.println(myLocation);
+			//sleep(10000);
+			}
 			
 			// create reader
 			bufferReader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
@@ -70,11 +86,12 @@ public class Client
 		}
 	}
 
-
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException 
+	{
 		String serverName = "localHost";
 		int serverPort = 8080;
 		Client client = new Client(serverName, serverPort);
+
 		client.run();
 	}
 }
