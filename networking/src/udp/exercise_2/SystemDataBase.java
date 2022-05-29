@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class SystemDataBase 
 {
-	private Map<String, Weather> weatherMap;
+	private Map<String, Student> weatherMap;
 
 	public SystemDataBase() 
 	{
@@ -14,11 +14,11 @@ public class SystemDataBase
 
 	public void dataBase() 
 	{
-		Weather weather_1 = new Weather(City.BATUMI, 19.5f, 9.8f);
-		Weather weather_2 = new Weather(City.LONDON, 14.5f, 10);
-		Weather weather_3 = new Weather(City.BERLIN, 21f, 7.5f);
-		Weather weather_4 = new Weather(City.TELAVIV, 28.3f, 13.5f);
-		Weather weather_5 = new Weather(City.PARIS, 20.1f, 4f);
+		Student weather_1 = new Student(City.BATUMI, 19.5f, 9.8f);
+		Student weather_2 = new Student(City.LONDON, 14.5f, 10);
+		Student weather_3 = new Student(City.BERLIN, 21f, 7.5f);
+		Student weather_4 = new Student(City.TELAVIV, 28.3f, 13.5f);
+		Student weather_5 = new Student(City.PARIS, 20.1f, 4f);
 		
 		weatherMap.put(City.getNameOfCity(City.BATUMI), weather_1);
 		weatherMap.put(City.getNameOfCity(City.LONDON), weather_2);
@@ -39,7 +39,7 @@ public class SystemDataBase
 		return checkResult;
 	}
 	
-	private Weather getWeather(String city) 
+	private Student getWeather(String city) 
 	{
 		return weatherMap.get(city.toUpperCase());
 	}

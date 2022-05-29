@@ -21,6 +21,21 @@ public class Location
 		return "Location [longitude=" + longitude + ", altitude=" + altitude + ", timestamp=" + timestamp + "]";
 	}
 	
+	public float getLongitude() 
+	{
+		return longitude;
+	}
+
+	public float getAltitude() 
+	{
+		return altitude;
+	}
+
+	public LocalDateTime getTimestamp() 
+	{
+		return timestamp;
+	}
+	
 	
 	
 	

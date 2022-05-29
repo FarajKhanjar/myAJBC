@@ -2,13 +2,13 @@ package udp.exercise_2;
 
 import java.util.Objects;
 
-public class Weather 
+public class Student 
 {
 	private City city;
 	private float temperature;
 	private float humidity;
 
-	public Weather(City city, float temperature, float humidity) 
+	public Student(City city, float temperature, float humidity) 
 	{
 		this.city = city;
 		this.temperature = temperature;
@@ -45,7 +45,7 @@ public class Weather
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Weather other = (Weather) obj;
+		Student other = (Student) obj;
 		return Objects.equals(city, other.city);
 	}
 }
