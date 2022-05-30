@@ -5,10 +5,10 @@ import java.time.LocalDateTime;
 public class Expense 
 {
 	private LocalDateTime timestamp;
-	private float amount;
+	private double amount;
 	private Category category;
 	
-	public Expense(LocalDateTime timestamp, float amount, Category category) 
+	public Expense(LocalDateTime timestamp, Category category , double amount) 
 	{
 		this.timestamp = timestamp;
 		this.amount = amount;

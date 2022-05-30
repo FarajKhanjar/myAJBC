@@ -6,5 +6,15 @@ public enum Category
 	CLOTHING,
 	UTILITIES ,
 	TRANSPORTATION;
+	
+	public static Category getValue(int i) 
+	{
+		return Category.values()[i];
+	}
+	
+	public static int getSize() 
+	{
+		return Category.values().length;
+	}
 
 }
